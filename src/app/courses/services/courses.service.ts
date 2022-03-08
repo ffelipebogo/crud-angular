@@ -7,7 +7,9 @@ import { HttpClient } from '@angular/common/http';
 	providedIn: 'root',
 })
 export class CoursesService {
-	private readonly API = '/assets/courses.json';
+	private readonly API = 'assets/courses.json';
+	//private readonly API = 'api/courses';
+
 	constructor(private httpClient: HttpClient) {}
 
 	list() {
@@ -15,7 +17,7 @@ export class CoursesService {
 			// termina a conexão quando o servidor retorna a primeira resposta
 			//(no caso a lista de cursos)
 			first(),
-			delay(5000),
+			delay(1000),
 			//posso manipular os dados antes de retornar
 			tap((courses) => console.log(courses))
 		);

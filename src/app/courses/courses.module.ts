@@ -1,3 +1,4 @@
+import { NewCoursesComponent } from './courses/new-courses/new-courses.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +8,7 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
-	declarations: [CoursesComponent],
+	declarations: [CoursesComponent, NewCoursesComponent],
 	imports: [
 		CommonModule,
 		CoursesRoutingModule,

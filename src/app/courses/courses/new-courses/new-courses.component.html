@@ -1,0 +1,25 @@
+<mat-card>
+
+	<mat-toolbar color="primary">
+		<span>Novo curso</span>
+	</mat-toolbar>
+	<div style="display: flex;">
+		<div class="col-sm06" style="margin: 5px;">
+			<mat-form-field appearance="fill">
+				<mat-label>Course</mat-label>
+				<input matInput placeholder="Ex. Reactjs" value="">
+			</mat-form-field>
+		</div>
+		<div class="col-sm-06" style="margin: 5px;">
+
+			<mat-form-field appearance="fill">
+				<mat-label>Category</mat-label>
+				<input matInput placeholder="Ex. Front-end">
+			</mat-form-field>
+		</div>
+
+		<div class="btn-save">
+			<button mat-raised-button title="Save course" (click)="save()">Save</button>
+		</div>
+	</div>
+</mat-card>
